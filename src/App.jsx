@@ -1,5 +1,5 @@
-import Header from "./components/header"
-import Baner from "./components/baner"
+import Header from "./components/Header"
+import Baner from "./components/Banner"
 function App() {
 
   return (

@@ -24,9 +24,10 @@ function App() {
 
       const data = await response.json();
 
-      console.log(data);
+      setMovies(data.results);
     }
     fetchMovies();
+    console.log(movies);
   } , []);
 
   return (
@@ -34,8 +35,8 @@ function App() {
       <div className="bg-black">
         <Header/>
         <Baner/>
-        <MovieList title={'Hot Movie'}/>
-        <MovieList title={'For You'}/>
+        <MovieList title={'Hot Movie'} data={movies}/>
+        {/* <MovieList title={'For You'}/> */}
         
       </div>
     </>

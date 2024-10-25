@@ -15,7 +15,8 @@
     "react-dom": "^18.3.1",
     "react-modal": "^3.16.1",
     "react-model": "^4.3.1",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

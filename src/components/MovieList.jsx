@@ -76,7 +76,6 @@ const MovieList = ({ title, data }) => {
   const [trailerKey, setTrailerKey] = useState('');
 
  
-
   const handleTrailer = async (id) => {
      setTrailerKey(''); // Reset trailer key when modal is new opened;
     try {
@@ -105,12 +104,12 @@ const MovieList = ({ title, data }) => {
       <h2 className='uppercase text-xl mb-4'> {title} </h2>
       <Carousel className='flex items-center' responsive={responsive}>
         {data.length > 0 && data.map((item) => (
-          <div key={item.id} className='flex'>
-            <div className='w-[230px] h-[313px] relative group cursor-pointer' onClick={ () => handleTrailer(item.id) }>
+          <div key={item.id} className='flex mr-1 ml-1'>
+            <div className='w-[230px] h-[334px] relative group cursor-pointer' onClick={ () => handleTrailer(item.id) }>
               <div className='group-hover:scale-105 transition-transform duration-500 ease-in-out  bg-cyan-900 rounded-sm w-full h-full'>
                 <div className='absolute w-full h-[290px] top-0 left-0 bg-black/20' />
                 <img src={`${import.meta.env.VITE_IMG_URL}${item.poster_path}`} alt={item.title} className='w-full h-[290px] object-cover' />
-                <p className='uppercase flex items-center justify-center text-sm'> {item.title || item.original_title} </p>
+                <p className='flex items-center justify-center text-sm mt-1 ml-1 mr-1'> {item.title || item.original_title} ({new Date(item.release_date).getFullYear()})</p>
               </div>
             </div>
           </div>

@@ -7,12 +7,12 @@ import { getStorage } from "firebase/storage"; // Import getStorage for Firebase
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: "movie-95f0f.firebaseapp.com",
-  projectId: "movie-95f0f",
-  storageBucket: "movie-95f0f.appspot.com",
-  messagingSenderId: "1065035933882",
-  appId: "1:1065035933882:web:9d4bf69a3177c56ef07a83",
-  measurementId: "G-J3Z4M86T9S"
+  authDomain: "movie-app-a2f6d.firebaseapp.com",
+  projectId: "movie-app-a2f6d",
+  storageBucket: "movie-app-a2f6d.appspot.com",
+  messagingSenderId: "523965798124",
+  appId: "1:523965798124:web:cb4bc3f978917a26e037c9",
+  measurementId: "G-GDWNYHC8DW"
 };
 
 // Initialize Firebase
